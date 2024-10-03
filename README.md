@@ -35,11 +35,13 @@ Ce projet est un Test technique pour SoumissionRénovation.ca. Il s'agit d'une A
 
 ##### 3. Créer une fichier .env
 
-_Vous pouvez utiliser le fichier .env.copy et retirer le ".copy"_
-Mettre l'instruction suivante
-
+Créer un fichier .env
 ```bash
 touch .env
+```
+
+Mettre l'instruction suivante
+```bash
  DATABASE_URL="postgresql://postgres:dev@localhost:5432/soumission-renovation?schema=public"
 ```
 
@@ -61,8 +63,13 @@ npx prisma migrate dev --name init
 
 ##### 6. Peupler la base de données avec les données test
 
+Assurez-vous que ts-node est bien installer
+
 ```bash
 npm install ts-node --save-dev
+```
+Lancer la procédure
+```bash
 npm run prisma:seed
 ```
 
