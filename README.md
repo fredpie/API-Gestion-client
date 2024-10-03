@@ -64,6 +64,8 @@ npx prisma migrate dev --name init
 npm run prisma:seed
 ```
 
+## Démarrage de l'application
+
 ## Démarrez l'application en mode Dev
 
 ```bash
@@ -89,4 +91,12 @@ Vous pouvez utilisez une application comme Postman ou Insomnia pour tester l'API
 
 ```bash
 http://localhost:3000/
+```
+
+## ORM de la database
+
+Utiliser Prisma studio dans le navigateur pour obtenir un visuel de la base de donné
+
+```bash
+npx prisma studio
 ```
