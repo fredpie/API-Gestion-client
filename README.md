@@ -75,20 +75,20 @@ npm run prisma:seed
 
 ## Démarrage de l'application
 
-## Démarrez l'application en mode Dev
+### Démarrez l'application en mode Dev
 
 ```bash
 npm run start:dev
 ```
 
-## Démarrez l'application en mode Prod
+### Démarrez l'application en mode Prod
 
 ```bash
 npm run build
 npm run start:prod
 ```
 
-## Documentation de l'API
+### Documentation de l'API
 
 Une documentation interactive de l'API est disponible via Swagger :
 
@@ -102,7 +102,7 @@ Vous pouvez utilisez une application comme Postman ou Insomnia pour tester l'API
 http://localhost:3000/
 ```
 
-## ORM de la database
+### Database dans le navigateur
 
 Utiliser Prisma studio dans le navigateur pour obtenir un visuel de la base de donné
 
