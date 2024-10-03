@@ -1,6 +1,7 @@
 # TEST - Soumission-Rénovation.ca
 
 **Assurez-vous d'utiliser la version Node 20.17.0 ou supérieur**
+
 Ce projet est un Test technique pour SoumissionRénovation.ca. Il s'agit d'une API RESTful conçue pour gérer des projets de rénovation, incluant les entités suivantes :
 
 - **Projet :** Informations générales sur le projet (nom, description, dates, budget, etc.).
@@ -15,7 +16,7 @@ Ce projet est un Test technique pour SoumissionRénovation.ca. Il s'agit d'une A
 - **Docker :** Pour la gestion de la base de données PostgreSQL.
 - **TypeScript :** Langage de programmation utilisé dans le projet.
 
-# --------------------------------------------------------------------------
+# -------------------------------
 
 ## Installation du projet
 
@@ -38,6 +39,7 @@ _Vous pouvez utiliser le fichier .env.copy et retirer le ".copy"_
 Mettre l'instruction suivante
 
 ```bash
+touch .env
  DATABASE_URL="postgresql://postgres:dev@localhost:5432/soumission-renovation?schema=public"
 ```
 
@@ -54,13 +56,13 @@ docker-compose up -d
 _Générez le client Prisma et appliquez les migrations à la base de données :_
 
 ```bash
-npx prisma generate
 npx prisma migrate dev --name init
 ```
 
 ##### 6. Peupler la base de données avec les données test
 
 ```bash
+npm install ts-node --save-dev
 npm run prisma:seed
 ```
 
