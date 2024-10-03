@@ -1,5 +1,6 @@
 # TEST - Soumission-Rénovation.ca
 
+**Assurez-vous d'utiliser la version Node 20.17.0 ou supérieur**
 Ce projet est un Test technique pour SoumissionRénovation.ca. Il s'agit d'une API RESTful conçue pour gérer des projets de rénovation, incluant les entités suivantes :
 
 - **Projet :** Informations générales sur le projet (nom, description, dates, budget, etc.).
@@ -14,7 +15,7 @@ Ce projet est un Test technique pour SoumissionRénovation.ca. Il s'agit d'une A
 - **Docker :** Pour la gestion de la base de données PostgreSQL.
 - **TypeScript :** Langage de programmation utilisé dans le projet.
 
-# ------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 
 ## Installation du projet
 
